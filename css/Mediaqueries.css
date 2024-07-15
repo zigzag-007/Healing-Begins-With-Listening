@@ -1,0 +1,424 @@
+/* Add media queries for tablet and mobile views */
+
+@media (max-width: 768px) {
+  .logo h2 {
+    font-size: 20px;
+    padding-left: 300px;
+  }
+}
+
+@media (max-width: 1198px) {
+  .logo h2 {
+    font-size: 20px;
+    padding-left: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo h2 {
+    font-size: 17px;
+    padding-left: 210px;
+  }
+}
+
+@media (max-width: 991px) {
+    .navbar-nav {
+        background-color: rgba(31, 31, 31, 0.95);
+        padding: 20px;
+    }
+    
+    .navbar-nav .nav-link {
+        padding: 10px 0;
+    }
+}
+
+@media (min-width: 992px) {
+    .about-image {
+        max-width: 380px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .about-content {
+        order: 1;
+    }
+    
+    .about-image-container {
+        order: 2;
+    }
+}
+
+@media (max-width: 991px) {
+    .about h2 {
+        text-align: center;
+    }
+    
+    .about p {
+        text-align: center;
+    }
+    
+    .about-list {
+        padding-left: 0;
+        list-style-position: inside;
+    }
+    
+    .about-image {
+        max-width: 300px;
+        display: block;
+        margin: 0 auto 30px;
+    }
+    
+    .about-image-container {
+        order: 1;
+    }
+    
+    .about-content {
+        order: 2;
+    }
+}
+
+@media (max-width: 768px) {
+    .about h2 {
+        font-size: 2em;
+    }
+
+    .about p {
+        font-size: 1em;
+    }
+
+    .about-image {
+        max-width: 250px;
+    }
+}
+
+/* Styles for larger screens */
+@media (min-width: 768px) {
+    /* Container for team members */
+    .team-container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px; /* Adjust gap as needed */
+        padding: 20px; /* Adjust padding as needed */
+    }
+
+    /* Each team member */
+    .team-member {
+        flex: 1 1 20%; /* Adjust the flex-basis percentage as needed */
+        max-width: 20%; /* Ensure max-width is the same as flex-basis */
+    }
+}
+
+@media (max-width: 992px) {
+    .team-member {
+        flex: 0 0 calc(50% - 30px);
+        max-width: calc(50% - 30px);
+    }
+}
+
+@media (max-width: 768px) {
+    .about h2 {
+        font-size: 2.5em;
+    }
+
+    .about p {
+        font-size: 1em;
+    }
+
+    .team-member img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .team-member h3 {
+        font-size: 1.2em;
+    }
+}
+
+@media (max-width: 576px) {
+    .team-member {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 1200px) {
+    .testimonial {
+        flex: 1 1 calc(50% - 30px);
+    }
+}
+
+@media (max-width: 768px) {
+    .testimonials h2 {
+        font-size: 2em;
+    }
+
+    .testimonial {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+
+    .testimonial p {
+        font-size: 1em;
+    }
+}
+
+/* Mobile Responsive Styles */
+@media screen and (max-width: 768px) {
+    #donations .img-col,
+    #donations .text-col {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    #donations .img-col {
+        order: 1; /* Changed from 2 to 1 */
+    }
+
+    #donations .text-col {
+        order: 2; /* Changed from 1 to 2 */
+        text-align: center;
+    }
+
+    #donations h2 {
+        font-size: 2em;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #donations p {
+        font-size: 1em;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #donations .img-responsive {
+        max-width: 250px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #donations {
+        padding: 40px 0;
+    }
+
+    #donations h2 {
+        font-size: 1.8em;
+    }
+
+    #donations .cta-button {
+        padding: 10px 20px;
+        font-size: 0.9em;
+        margin-left: auto;
+        margin-right: auto;        
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-info {
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+  .contact-info {
+    text-align: center;
+  }
+  
+  .contact-info li {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  
+  .contact-info .contact-icon {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px;
+  }
+  
+  .contact-info strong {
+    font-size: 1.5em;
+    margin-bottom: 8px;
+  }
+  
+  .contact-info p {
+    font-size: 1.2em;
+  }
+}
+
+/* Mobile Responsive Styles */
+/* For screens with a maximum width of 1200px */
+@media (max-width: 1200px) {
+ .hero {
+    height: 80vh;
+  }
+ .hero-content {
+    padding: 20px;
+  }
+ .hero h1 {
+    font-size: 2.5em;
+  }
+ .hero p {
+    font-size: 1.2em;
+  }
+ .cta-button {
+    padding: 10px 20px;
+  }
+}
+
+/* For screens with a maximum width of 992px */
+@media (max-width: 992px) {
+ .navbar-nav {
+    background-color: rgba(31, 31, 31, 0.95);
+    padding: 10px;
+  }
+ .navbar-nav.nav-link {
+    padding: 5px 0;
+  }
+ .hero {
+    height: 70vh;
+  }
+ .hero-content {
+    padding: 15px;
+  }
+ .hero h1 {
+    font-size: 2em;
+  }
+ .hero p {
+    font-size: 1em;
+  }
+ .cta-button {
+    padding: 8px 15px;
+  }
+}
+
+/* For screens with a maximum width of 768px */
+@media (max-width: 768px) {
+ .header {
+    background-color: rgba(31, 31, 31, 1);
+  }
+ .navbar-brand {
+    font-size: 1.2rem;
+  }
+ .navbar-nav.nav-link {
+    font-size: 0.9rem;
+  }
+ .hero {
+    height: 60vh;
+  }
+ .hero-content {
+    padding: 10px;
+  }
+ .hero h1 {
+    font-size: 1.8em;
+  }
+ .hero p {
+    font-size: 0.9em;
+  }
+ .cta-button {
+    padding: 6px 12px;
+  }
+ .team-member {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+ .testimonial {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+/* For screens with a maximum width of 576px */
+@media (max-width: 576px) {
+ .header {
+    background-color: rgba(31, 31, 31, 1);
+  }
+ .navbar-brand {
+    font-size: 1rem;
+  }
+ .navbar-nav.nav-link {
+    font-size: 0.8rem;
+  }
+ .hero {
+    height: 50vh;
+  }
+ .hero-content {
+    padding: 5px;
+  }
+ .hero h1 {
+/*    font-size: 1.5em;*/
+  }
+ .hero p {
+    font-size: 1em;
+  }
+ .cta-button {
+    padding: 4px 10px;
+  }
+ .team-member {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+ .testimonial {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+ .contact-info {
+    margin-top: 20px;
+  }
+}
+
+/* Mobile-specific styles for iPhone X and other mobile devices */
+@media (max-width: 425px) { /* iPhone X and similar screen sizes */
+  .contact-info {
+    font-size: 14px; /* Reduce font size for mobile */
+  }
+
+  .contact-icon {
+    width: 15px; /* Reduce icon size for mobile */
+    height: 15px;
+    margin-right: 5px; /* Add some space between icon and text */
+  }
+
+  .contact-info ul {
+    flex-direction: column; /* Stack list items vertically */
+    display: -webkit-flex; /* Add WebKit prefix for Safari */
+    display: flex; /* Add standard flexbox declaration */
+  }
+
+  .contact-info li {
+    margin-bottom: 10px; /* Add space between list items */
+    -webkit-margin-collapse: separate; /* Fix margin issue in Safari */
+  }
+
+  .contact-info span {
+    font-size: 14px; /* Reduce font size for mobile */
+    -webkit-font-smoothing: antialias; /* Improve font rendering in Safari */
+  }
+
+  /* Make the contact info labels (Address, Email, Phone) smaller */
+  .contact-info li span:first-child {
+    font-size: 12px; /* Reduce label font size for mobile */
+    color: #666; /* Make labels a bit lighter */
+  }
+}
+
+/* Mobile-specific styles for iPhone X and other mobile devices */
+@media (max-width: 425px) {
+    /* Initial state and transition for contact animated elements */
+    .contact-info img.contact-icon, .contact-info strong, .contact-info p {
+        opacity: 0;
+        transform: scale(0.5) rotate(-10deg);
+        transition: opacity 1s ease-out, transform 1s ease-out;
+    }
+
+    /* Visible state for contact animated elements */
+    .contact-info img.contact-icon.visible, .contact-info strong.visible, .contact-info p.visible {
+        opacity: 1;
+        transform: scale(1) rotate(0deg);
+    }
+
+}

@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Maintenance</title>
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+    <style>
+        html, body { padding: 0; margin: 0; width: 100%; height: 100%; }
+        * {box-sizing: border-box;}
+        body { 
+            text-align: center; 
+            padding: 0; 
+            background: #d6433b;
+            color: #fff; 
+            font-family: 'Open Sans', sans-serif; 
+            display: flex; 
+            flex-direction: column; 
+            min-height: 100vh; 
+        }
+        .content-wrapper {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 20px;
+        }
+        h1 { font-size: 40px; font-weight: 400; margin-bottom: 20px; margin-top: auto; }
+        p { font-size: 18px; margin-bottom: 15px; font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+        article { 
+            width: 100%;
+            max-width: 600px; 
+            margin: 0 auto;
+            background: rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 30px 20px;
+        }
+        a { color: #fff; font-weight: bold;}
+        a:hover { text-decoration: none; }
+        .icon { 
+            width: 60px; 
+            height: 60px;
+            margin-bottom: 20px;
+            background-color: #fff;
+            border-radius: 50%;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .icon svg {
+            width: 30px;
+            height: 30px;
+            fill: #d6433b;
+        }
+        
+        /* Updated Footer styles */
+        footer {
+            background-color: rgba(0, 0, 0, 0.1);
+            width: 100%;
+            text-align: center;
+            font-size: 17px;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        
+        @media (max-width: 480px) {
+            h1 { font-size: 28px; }
+            p { font-size: 16px; }
+            .icon { width: 50px; height: 50px; }
+            .icon svg { width: 25px; height: 25px; }
+                footer {
+                    font-size: 17px;
+                    padding: 30px 10px;
+                    margin-top: 15px;
+                    letter-spacing: 0.8px;
+                }
+            .content-wrapper { padding: 15px; }
+            article { 
+                padding: 20px 15px; 
+                margin-bottom: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="content-wrapper">
+        <article>
+            <div class="icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path d="M12 5.177l8.631 15.823h-17.262l8.631-15.823zm0-4.177l-12 22h24l-12-22zm-1 9h2v6h-2v-6zm1 9.75c-.689 0-1.25-.56-1.25-1.25s.561-1.25 1.25-1.25 1.25.56 1.25 1.25-.561 1.25-1.25 1.25z"/>
+                </svg>
+            </div>
+            <h1>We'll be back soon!</h1>
+                <p>Sorry for the inconvenience.🙏 We're upgrading and improving our site at the moment.🔧✨</p>
+                <p>If you need to, you can always follow us on <a href="https://www.instagram.com/p/C9DRYkwyL7d/">Instagram</a> 📸 for updates.</p>
+                <p>Otherwise, we'll be back up shortly! ⏳</p>
+        </article>
+    </div>
+    <footer>
+        Copyright © 2024 Healing Begins with Listening | ❤️ Designed by Zig Zag
+    </footer>
+</body>
+</html>
