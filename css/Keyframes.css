@@ -1,6 +1,7 @@
+/* Polygon Animation */
 @keyframes animate {
-  0%,
-  100% {
+  0%, 100% {
+    /* Initial and final state of clip-path polygon */
     clip-path: polygon(
       0% 45%,
       16% 44%,
@@ -15,6 +16,7 @@
   }
 
   50% {
+    /* Intermediate state of clip-path polygon */
     clip-path: polygon(
       0% 60%,
       15% 65%,
@@ -32,71 +34,91 @@
 /* Pulse Animation */
 @keyframes pulse {
     0% {
+        /* Initial state of pulse animation */
         transform: translateY(-50%) scale(1);
         box-shadow: 0 0 10px rgba(255, 107, 107, 0.5);
     }
     50% {
+        /* Middle state of pulse animation */
         transform: translateY(-50%) scale(1.2);
         box-shadow: 0 0 20px rgba(255, 107, 107, 0.7);
     }
     100% {
+        /* Final state of pulse animation */
         transform: translateY(-50%) scale(1);
         box-shadow: 0 0 10px rgba(255, 107, 107, 0.5);
     }
 }
 
+/* Blink Animation */
 @keyframes blink {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0; }
+  0%, 100% {
+    /* Full opacity */
+    opacity: 1;
+  }
+  50% {
+    /* Invisible */
+    opacity: 0;
+  }
 }
 
+/* Spin Animation used for Bootup Animation */
 @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
+    0% {
+        /* Starting rotation */
+        transform: rotate(0deg);
+    }
+    100% {
+        /* Full rotation */
+        transform: rotate(360deg);
+    }
 }
 
+/* Content Fade-in Animation used for Bootup Animation */
 @keyframes content-fade-in {
     to {
+        /* Fading in content */
         opacity: 1;
         transform: translateY(0);
     }
 }
 
+/* Bounce Animation */
 @keyframes bounce {
-  0% {
+  0%, 100% {
+    /* Initial and final state of bounce */
     transform: scale(1);
   }
-  30% {
+  30%, 70% {
+    /* First and third bounces */
     transform: scale(1.1);
   }
   50% {
-    transform: scale(1);
-  }
-  70% {
-    transform: scale(1.1);
-  }
-  100% {
+    /* Peak of the bounce */
     transform: scale(1);
   }
 }
 
+/* BounceOnce Animation */
 @keyframes bounceOnce {
-  0% {
+  0%, 100% {
+    /* Initial and final state of one-time bounce */
     transform: scale(1);
   }
   50% {
+    /* Peak of the one-time bounce */
     transform: scale(1.1);
-  }
-  100% {
-    transform: scale(1);
   }
 }
 
+/* ScaleUp Animation */
 @keyframes scaleUp {
   0% {
+    /* Initial state of scaling up */
     transform: scale(1);
   }
   100% {
+    /* Fully scaled up */
     transform: scale(1.1);
   }
 }

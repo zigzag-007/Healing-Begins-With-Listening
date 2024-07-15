@@ -774,33 +774,40 @@ body {
     justify-content: center;
     align-items: center;
     z-index: 10;
+    background-color: #f0f8ff; /* Soft light blue background */
 }
 
 .loader {
-    border: 16px solid #f3f3f3;
-    border-top: 16px solid #3498db;
+    border: 8px solid transparent;
+    border-top: 8px solid #8ecae6; /* Soft blue */
     border-radius: 50%;
-    width: 120px;
-    height: 120px;
+    width: 100px;
+    height: 100px;
     animation: spin 2s linear infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .loader-inner {
-    border: 8px solid #f3f3f3;
-    border-top: 8px solid #e74c3c;
+    border: 8px solid transparent;
+    border-top: 8px solid #219ebc; /* Slightly darker blue */
     border-radius: 50%;
-    width: 80px;
-    height: 80px;
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    animation: spin 1.5s linear infinite;
+    width: 60px;
+    height: 60px;
+    animation: spin 1.5s linear infinite reverse;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
 }
 
 .boot-up-text {
     margin-top: 20px;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: bold;
+    color: #023047; /* Dark blue */
 }
 
 .content {
