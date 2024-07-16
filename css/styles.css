@@ -80,7 +80,7 @@ body {
 }
 
 /* Strict Permanenet sing background image for the following elements */
-.about, .header.scrolled, .services, .reviews, .team, .testimonials, .contact, #donations, .footer {
+.about, .header.scrolled, .services, .reviews, .team, .testimonials, .contact, #donations, .footer, .whatsapp {
 /*    background-color: #081B29 !important;*/
     background-image: var(--theme-image) !important;
     background-repeat: no-repeat;
@@ -89,7 +89,7 @@ body {
 }
 
 /* The blue box shadow effect, applies to all elements thought to be good by Zig Zag */
-.testimonial, .service, .about-image, #donations .img-responsive, .team-member img {
+.testimonial, .service, .about-image, #donations .img-responsive, .team-member img, .whatsapp-image {
     box-shadow: 1px 1px 20px #012290f7, 1px 1px 40px #0053b8f7 !important;
 }
 
@@ -167,7 +167,7 @@ body {
   font-size: 17px;
   color: #000;
   border-radius: 7px;
-  letter-spacing: 4px;
+  letter-spacing: 1px;
   font-weight: 700;
   text-transform: uppercase;
   background: #EFA501;
@@ -221,6 +221,49 @@ body {
 }
 
 .about-image:hover {
+    transform: scale(1.05) !important;
+    box-shadow: 0 8px 20px rgba(240, 165, 0, 0.3);
+}
+
+.whatsapp {
+    background-color: #1f1f1f;
+    color: var(--all-text-color);
+    padding: 60px 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.whatsapp h2 {
+    font-size: 2.5em;
+    font-family: var(--heading2-font);
+    font-weight: 700;
+    margin-bottom: 30px;
+    color: var(--heading2-color);
+    display: contents;
+}
+
+.whatsapp p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.whatsapp-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+    margin-top: 50px;
+}
+
+.whatsapp-image {
+    max-width: 380px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.whatsapp-image:hover {
     transform: scale(1.05) !important;
     box-shadow: 0 8px 20px rgba(240, 165, 0, 0.3);
 }
@@ -818,14 +861,14 @@ body {
 }
 
 /* Initial state for all animated elements */
-.service,  .testimonial, .team-member, #donations .img-responsive, #donations h2, #donations p, #donations .cta-button, .about-image, .about h2, .about p, #point1, #point2, #point3 {
+.service,  .testimonial, .team-member, #donations .img-responsive, #donations h2, #donations p, #donations .cta-button, .about-image, .about p, .whatsapp-image, .whatsapp p, #point1, #point2, #point3 {
     opacity: 0;
     transform: scale(0.5) rotate(-10deg);
     transition: opacity 1s ease-out, transform 1s ease-out !important;
 }
 
 /* Visible state for all animated elements */
-.service.visible, .testimonial.visible, .team-member.visible, #donations .img-responsive.visible, #donations h2.visible, #donations p.visible, #donations .cta-button.visible, .about-image.visible, .about h2.visible, .about p.visible, #point1.visible, #point2.visible, #point3.visible {
+.service.visible, .testimonial.visible, .team-member.visible, #donations .img-responsive.visible, #donations h2.visible, #donations p.visible, #donations .cta-button.visible, .about-image.visible, .about p.visible, .whatsapp-image.visible, .whatsapp p.visible, #point1.visible, #point2.visible, #point3.visible {
     opacity: 1;
     transform: scale(1) rotate(0deg);
 }

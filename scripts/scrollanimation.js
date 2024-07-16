@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-    const scrollElements = document.querySelectorAll('.about-image-container, .about-content, .about, .service, .testimonial, .team-member, .donation-animation, .contact-animation, .contact-info img.contact-icon, .contact-info strong, .contact-info p, #donations .img-responsive, #donations h2, #donations p, #donations .cta-button, .about-image, .about h2, .about p, #point1, #point2, #point3');
+    const scrollElements = document.querySelectorAll('.about-image-container, .about-content, .about, .service, .testimonial, .team-member, .donation-animation, .contact-animation, .contact-info img.contact-icon, .contact-info strong, .contact-info p, #donations .img-responsive, #donations h2, #donations p, #donations .cta-button, .about-image, .about p, .whatsapp-image, .whatsapp p, #point1, #point2, #point3');
 
     const elementInView = (el, offset = 0) => {
         const elementTop = el.getBoundingClientRect().top;

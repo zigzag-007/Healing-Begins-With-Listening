@@ -16,19 +16,27 @@
 
 @media (max-width: 480px) {
   .logo h2 {
-    font-size: 17px;
-    padding-left: 210px;
+    font-size: 18.5px;
+    padding-left: 230px;
   }
 }
 
 @media (max-width: 991px) {
     .navbar-nav {
-        background-color: rgba(31, 31, 31, 0.95);
+        text-align: center;
         padding: 20px;
     }
     
     .navbar-nav .nav-link {
         padding: 10px 0;
+    }
+
+    #icon {
+        display: block;
+        width: 25px;
+        margin-left: 25px;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
@@ -273,7 +281,6 @@
 /* For screens with a maximum width of 992px */
 @media (max-width: 992px) {
  .navbar-nav {
-    background-color: rgba(31, 31, 31, 0.95);
     padding: 10px;
   }
  .navbar-nav.nav-link {
@@ -355,16 +362,13 @@
  .hero p {
     font-size: 1em;
   }
- .cta-button {
-    padding: 4px 10px;
-  }
  .team-member {
     flex: 0 0 100%;
     max-width: 100%;
   }
  .testimonial {
-    flex: 0 0 100%;
-    max-width: 100%;
+    flex: 0 0 80%;
+    max-width: 80%;
   }
  .contact-info {
     margin-top: 20px;
@@ -421,4 +425,37 @@
         transform: scale(1) rotate(0deg);
     }
 
+}
+
+/* Whatsapp Section Mobile Responsive */
+@media (max-width: 991px) {
+    .whatsapp h2 {
+        font-size: 2em;  /* Adjusted for smaller screens */
+        text-align: center;
+        display: contents;
+    }
+
+    .whatsapp p {
+        font-size: 1em;  /* Adjusted for smaller screens */
+        text-align: center;
+    }
+
+    .whatsapp-image {
+        max-width: 250px;  /* Adjusted for smaller screens */
+        display: block;
+        margin: 0 auto 30px;
+    }
+
+    .whatsapp-list {
+        padding-left: 0;
+        list-style-position: inside;
+    }
+
+    .whatsapp-image-container {
+        order: 1;
+    }
+
+    .whatsapp-content {
+        order: 2;
+    }
 }
