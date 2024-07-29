@@ -1,4 +1,4 @@
-<p align="center"><img src="https://raw.githubusercontent.com/zigzag-007/Healing-Begins-With-Listening/main/images/favicon.png" alt="HBL Logo"></p>
+<img src="https://raw.githubusercontent.com/zigzag-007/Healing-Begins-With-Listening/main/images/favicon.png" alt="HBL Logo" width="150">
 
 <h1 align="center">Healing Begins with Listening (HBL)</h1>
 
@@ -30,9 +30,9 @@ Latest Version: v1.5beta
 Release date: 09-July-2024
 ```
 
-### [Instagram](https://www.instagram.com/healingbeginswithlistening2024/)
+### [Follow us on Instagram](https://www.instagram.com/healingbeginswithlistening2024/)
 ### [WhatsApp Community Chat](https://chat.whatsapp.com/HOpNF17IrEHEGRIRYNLMSs)
-### Homepage - [https://healingbeginswithlistening.rf.gd/)
+### Homepage - https://healingbeginswithlistening.rf.gd/
 
 ---
 
