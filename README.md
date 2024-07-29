@@ -28,8 +28,8 @@ Your voice matters, and we're here to listen.
 </br>
 
 ```
-Latest Version: v1.5beta
-Release date: 09-July-2024
+Latest Version: v1.5beta build 4
+Release date: 30-July-2024
 ```
 
 ### [Follow us on Instagram](https://www.instagram.com/healingbeginswithlistening2024/)
