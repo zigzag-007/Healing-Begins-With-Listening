@@ -1,4 +1,6 @@
-<img src="https://raw.githubusercontent.com/zigzag-007/Healing-Begins-With-Listening/main/images/favicon.png" alt="HBL Logo" width="150">
+<p align="center">
+        <img src="https://raw.githubusercontent.com/zigzag-007/Healing-Begins-With-Listening/main/images/favicon.png" alt="HBL Logo" width="150">
+</p>
 
 <h1 align="center">Healing Begins with Listening (HBL)</h1>
 
