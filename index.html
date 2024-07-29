@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,12 +13,19 @@
   <link rel="stylesheet" href="css/Keyframes.css">
   <link rel="stylesheet" href="css/Mediaqueries.css">
 
+  <!-- BoxIcons -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+  <!-- Material Symbols -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,500,0,0" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,500,0,0" />
+  
   <!-- Favicon -->
   <link rel="icon" href="images/favicon.png" type="image/x-icon">
 </head>
-
 <body>
-<!-- Bootup animation loader -->
+  <!-- Bootup animation loader -->
   <div class="loader-wrapper">
       <div class="loader">
           <div class="loader-inner"></div>
@@ -57,7 +63,7 @@
                 <a class="nav-link" href="#contact">Contact Us</a>
               </li>
             </ul>
-            <img src="images/moon.png" id="icon" alt="Moon icon">
+            <span id="theme-toggle" class="material-symbols-outlined">dark_mode</span>
           </div>
         </nav>
       </div>
@@ -116,26 +122,6 @@
       </div>
     </section>
 
-    <section class="reviews py-5" id="reviews">
-      <div class="container text-center">
-        <h2>What Our Clients Say</h2>
-        <div class="testimonial-list d-flex flex-wrap justify-content-center mt-4">
-          <div class="testimonial bg-secondary text-light p-3 rounded mx-2 my-2">
-            <p>"Healing Begins with Listening changed my life. The compassionate support I received helped me through a very difficult time."</p>
-            <h3>- Alex Johnson</h3>
-          </div>
-          <div class="testimonial bg-secondary text-light p-3 rounded mx-2 my-2">
-            <p>"The group therapy sessions were incredibly helpful. I felt heard and understood for the first time in years."</p>
-            <h3>- Maria Lopez</h3>
-          </div>
-          <div class="testimonial bg-secondary text-light p-3 rounded mx-2 my-2">
-            <p>"I was skeptical at first, but the individual counseling sessions have given me tools to cope with anxiety that I use every day."</p>
-            <h3>- David Chen</h3>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <section class="team py-5" id="team">
       <div class="container text-center">
         <h2>Meet Our Team</h2>
@@ -164,6 +150,158 @@
       </div>
     </section>
 
+    <!-- <section class="reviews py-5" id="reviews">
+      <div class="container text-center">
+        <h2>What Our Clients Say</h2>
+        <div class="testimonial-list d-flex flex-wrap justify-content-center mt-4">
+          <div class="testimonial bg-secondary text-light p-3 rounded mx-2 my-2">
+            <p>"Healing Begins with Listening changed my life. The compassionate support I received helped me through a very difficult time."</p>
+            <h3>- Alex Johnson</h3>
+          </div>
+          <div class="testimonial bg-secondary text-light p-3 rounded mx-2 my-2">
+            <p>"The group therapy sessions were incredibly helpful. I felt heard and understood for the first time in years."</p>
+            <h3>- Maria Lopez</h3>
+          </div>
+          <div class="testimonial bg-secondary text-light p-3 rounded mx-2 my-2">
+            <p>"I was skeptical at first, but the individual counseling sessions have given me tools to cope with anxiety that I use every day."</p>
+            <h3>- David Chen</h3>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <section id="reviews" class="text-center">
+      <div class="container">
+          <div class="row">
+              <div class="col-12 section-intro text-center">
+                  <h2>What Our Clients Say</h2>
+                  <div class="divider"></div>
+              </div>
+          </div>
+          <div class="row g-4 text-start">
+              <div class="col-md-4" data-aos="fade-up">
+                  <div class="review p-4">
+                      <div class="person">
+                          <img src="https://lh3.googleusercontent.com/a-/ALV-UjVe14hSGHo9FAwYPDwnvxZrf52GSO5bxXQRFBCiXF7P5gMj_Szw=w150-h150-p-rp-mo-br100" alt="rev-img">
+                          <div class="text ms-3">
+                              <h6 class="mb-0">Илья Потанин</h6>
+                              <small class="fw-bolder">1 Review 1 Photo</small>
+                          </div>
+                      </div>
+                      <p class="pt-4">Healing Begins with Listening has provided me with an invaluable space to express my feelings and receive compassionate therapy. The team truly listens and offers profound support.</p>
+                      <div class="stars">
+                          <i class='bx bxs-star'></i>
+                          <i class='bx bxs-star'></i>
+                          <i class='bx bxs-star'></i>
+                          <i class='bx bxs-star'></i>
+                          <i class='bx bxs-star'></i>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="col-md-4" data-aos="fade-up">
+                  <div class="review p-4">
+                      <div class="person">
+                          <img src="https://lh3.googleusercontent.com/a-/ALV-UjXwSIXKvvn4US1sjk2MnabwbOE5EUZkmFXJjig7ZH89BcYE4fgD=w90-h90-p-rp-mo-ba3-br100" alt="rev-img">
+                          <div class="text ms-3">
+                              <h6 class="mb-0">Rafael Muñoz</h6>
+                              <small>Local Guide · 46 reviews</small>
+                          </div>
+                      </div>
+                      <p class="pt-4">The therapeutic sessions here have been life-changing. I feel heard and understood, and the guidance I've received has made a significant positive impact on my mental health.</p>
+                      <div class="stars">
+                          <i class='bx bxs-star'></i>
+                          <i class='bx bxs-star'></i>
+                          <i class='bx bxs-star'></i>
+                          <i class='bx bxs-star'></i>
+                          <i class='bx bxs-star'></i>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="col-md-4" data-aos="fade-up">
+                  <div class="review p-4">
+                      <div class="person">
+                          <img src="https://lh3.googleusercontent.com/a-/ALV-UjUQon91QlDxRXnnjwIe_ZWpjgBRrC2W9vMr9KyHmEVhLuYBOXT2=w90-h90-p-rp-mo-br100" alt="rev-img">
+                          <div class="text ms-3">
+                              <h6 class="mb-0">Anouar Ben</h6>
+                              <small>3 review · 1 photo</small>
+                          </div>
+                      </div>
+                      <p class="pt-4">A wonderful platform where I can freely talk about my emotions. The therapists are kind and empathetic, making me feel safe and supported.</p>
+                      <div class="stars">
+                          <i class='bx bxs-star'></i>
+                          <i class='bx bxs-star'></i>
+                          <i class='bx bxs-star'></i>
+                          <i class='bx bxs-star'></i>
+                          <i class='bx bxs-star'></i>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="col-md-4" data-aos="fade-up">
+                  <div class="review p-4">
+                      <div class="person">
+                          <img src="https://lh3.googleusercontent.com/a-/ALV-UjVDiqkYO8tuWnpBYzRK6oNKT7TRjSHkDIlNeS8Q8TxFb0auyDs=w90-h90-p-rp-mo-br100" alt="rev-img">
+                          <div class="text ms-3">
+                              <h6 class="mb-0">Maia Sivocci</h6>
+                              <small>3 reviews · 1 photo</small>
+                          </div>
+                      </div>
+                      <p class="pt-4">This service has been a beacon of hope for me. The team’s attentive listening and expert advice have helped me navigate through tough times with more resilience.</p>
+                      <div class="stars">
+                          <i class='bx bxs-star'></i>
+                          <i class='bx bxs-star'></i>
+                          <i class='bx bxs-star'></i>
+                          <i class='bx bxs-star'></i>
+                          <i class='bx bxs-star'></i>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="col-md-4" data-aos="fade-up">
+                  <div class="review p-4">
+                      <div class="person">
+                          <img src="https://lh3.googleusercontent.com/a-/ALV-UjUOckdfx1EMukyJ7lNpQhZ_rnsThFz7kTdd8X7--oxLuBEdx1E=w90-h90-p-rp-mo-br100" alt="rev-img">
+                          <div class="text ms-3">
+                              <h6 class="mb-0">Abdulla Issadeen</h6>
+                              <small>Local Guide · 2 reviews</small>
+                          </div>
+                      </div>
+                      <p class="pt-4">Expressing my feelings without judgment has been so liberating. The professional and caring approach of the therapists here is exceptional.</p>
+                      <div class="stars">
+                          <i class='bx bxs-star'></i>
+                          <i class='bx bxs-star'></i>
+                          <i class='bx bxs-star'></i>
+                          <i class='bx bxs-star'></i>
+                          <i class='bx bxs-star'></i>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="col-md-4" data-aos="fade-up">
+                  <div class="review p-4">
+                      <div class="person">
+                          <img src="https://lh3.googleusercontent.com/a-/ALV-UjXzJHfWgB5u1rj8EQiwGhEJt1DlBhd3AdMpjToPupNsr-TvuT0=w90-h90-p-rp-mo-br100" alt="rev-img">
+                          <div class="text ms-3">
+                              <h6 class="mb-0">ɢᴀᴍᴇ ᴏᴠᴇʀ Nusri</h6>
+                              <small>3 reviews</small>
+                          </div>
+                      </div>
+                      <p class="pt-4">The ability to talk freely and receive professional help has significantly improved my mental well-being. I highly recommend Healing Begins with Listening to anyone in need.</p>
+                      <div class="stars">
+                          <i class='bx bxs-star'></i>
+                          <i class='bx bxs-star'></i>
+                          <i class='bx bxs-star'></i>
+                          <i class='bx bxs-star'></i>
+                          <i class='bx bxs-star'></i>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+
     <!-- <section id="donations">
       <div class="container">
         <div class="donation-animation">
@@ -186,7 +324,7 @@
       <div class="container">
         <div class="row align-items-center"> <!-- added align-items-center class -->
           <div class="col-lg-6 whatsapp-image-container">
-              <img src="images/whatsapp-communities-by-whatsapp.png" alt="whatsapp" class="img-fluid whatsapp-image">
+              <img src="https://img.freepik.com/premium-vector/join-us-whatsapp-3d-whatsapp-logo-with-social-media-icon-whatsapp-square-banner-instagram_405041-404.jpg?w=2000" alt="whatsapp" class="img-fluid whatsapp-image">
           </div>
           <div class="col-lg-6 whatsapp-content d-flex flex-column justify-content-center text-center"> <!-- added d-flex, flex-column, and justify-content-center classes -->
             <h2>Join our Whatsapp Community🌟</h2>
@@ -194,7 +332,7 @@
               <p class="text-lg-center">
                 🌟 Join our supportive chat community! 🌟 Connect with a large group where you can share your journey, find support, and help others heal. Whether you need help or want to help, our safe and anonymous space is here for you. 🤝✨
               </p>
-              <a href="https://chat.whatsapp.com/HOpNF17IrEHEGRIRYNLMSs" class="cta-button btn btn-warning">Join Now</a>
+              <a href="https://chat.whatsapp.com/HOpNF17IrEHEGRIRYNLMSs" class="cta-button btn btn-warning" id="join-now">Join Now</a>
             </div>
           </div>
         </div>
@@ -228,7 +366,7 @@
             <div class="contact-info">
               <ul>
                 <li>
-                  <img src="images/address.ico" alt="Address Icon" class="contact-icon blue-icon">
+                  <span id="address-icon" class="material-symbols-outlined">location_on</span>
                   <div>
                     <strong>ADDRESS</strong>
                     <p>Sri Lanka, Mount Lavinia</p>
@@ -236,7 +374,7 @@
                 </li>
                 <li>
                   <a href="tel:+94781910338">
-                    <img src="images/phone.ico" alt="Phone Icon" class="contact-icon blue-icon">
+                    <span id="phone-icon" class="material-symbols-outlined">call</span>
                   </a>
                   <div>
                     <strong>PHONE NUMBER</strong>
@@ -245,7 +383,7 @@
                 </li>
                 <li>
                   <a href="mailto:healingbeginswithlistening@gmail.com">
-                    <img src="images/email.ico" alt="Email Icon" class="contact-icon blue-icon">
+                    <span id="email-icon" class="material-symbols-outlined">mail</span>
                   </a>
                   <div>
                     <strong>EMAIL</strong>
@@ -257,7 +395,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section>   
 
     <!-- Footer Section -->
     <footer class="footer py-4">
@@ -304,16 +442,16 @@
 
   <!-- Darkmode, Lightmode standard javascript code -->
   <script>
-  var icon = document.getElementById("icon");
-  icon.onclick = function() {
-    document.body.classList.toggle("dark-theme");
-    if (document.body.classList.contains("dark-theme")) {
-      icon.src = "images/sun.png";
-    } else {
-      icon.src = "images/moon.png";
+    var themeToggle = document.getElementById("theme-toggle");
+    themeToggle.onclick = function() {
+      document.body.classList.toggle("dark-theme");
+      if (document.body.classList.contains("dark-theme")) {
+        themeToggle.textContent = "wb_sunny";
+      } else {
+        themeToggle.textContent = "dark_mode";
+      }
     }
-  }
-  </script>
+    </script>
 </body>
 
 </html>

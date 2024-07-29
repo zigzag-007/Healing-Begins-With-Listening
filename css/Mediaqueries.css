@@ -31,10 +31,9 @@
         padding: 10px 0;
     }
 
-    #icon {
+    #theme-toggle {
         display: block;
         width: 25px;
-        margin-left: 25px;
         margin-left: auto;
         margin-right: auto;
     }
@@ -239,7 +238,8 @@
   .contact-info li {
     flex-direction: column;
     align-items: center;
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
+    margin-left: 0;
   }
   
   .contact-info .contact-icon {
@@ -413,18 +413,17 @@
 /* Mobile-specific styles for iPhone X and other mobile devices */
 @media (max-width: 425px) {
     /* Initial state and transition for contact animated elements */
-    .contact-info img.contact-icon, .contact-info strong, .contact-info p {
-        opacity: 0;
-        transform: scale(0.5) rotate(-10deg);
-        transition: opacity 1s ease-out, transform 1s ease-out;
-    }
+    .contact-info ul li #address-icon, #phone-icon, #email-icon, .contact-info strong, .contact-info p {
+      opacity: 0;
+      transform: scale(0.5) rotate(-10deg);
+      transition: opacity 1s ease-out, transform 1s ease-out;
+  }
 
-    /* Visible state for contact animated elements */
-    .contact-info img.contact-icon.visible, .contact-info strong.visible, .contact-info p.visible {
-        opacity: 1;
-        transform: scale(1) rotate(0deg);
-    }
-
+  /* Visible state for contact animated elements */
+  .contact-info ul li #address-icon.visible, #phone-icon.visible, #email-icon.visible, .contact-info strong.visible, .contact-info p.visible {
+      opacity: 1;
+      transform: scale(1) rotate(0deg);
+  }
 }
 
 /* Whatsapp Section Mobile Responsive */
@@ -458,4 +457,19 @@
     .whatsapp-content {
         order: 2;
     }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .review {
+      margin: 10px 5px;
+  }
+  
+  #reviews h2 {
+      font-size: 2em;
+  }
+  
+  #reviews .section-intro p {
+      font-size: 1em;
+  }
 }

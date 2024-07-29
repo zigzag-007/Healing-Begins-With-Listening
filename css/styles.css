@@ -16,7 +16,17 @@ html {
     --contact-paragrph-color: #000000;
     --all-text-color: #000000;
     --footer-text-color: #524a42;
+    --darklight-mode-color: #333;
+    --box-shadow: 1px 1px 20px #f9e356f7, 1px 1px 40px #f7df43f7;
     --hamburger-menu: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='black' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    --review-bg: rgba(255, 255, 255, 0.9);
+    --review-text: #333333;
+    --review-border: rgba(0, 0, 0, 0.1);
+    --review-stars: #f0a500;
+    --review-name: #f0a500;
+    --review-source: #666666;
+    --section-bg: #f5f5f5;
+    --section-text: #333333;
 }
 
 /* Secondary Theme for the Website, preferrably dark themed */
@@ -31,7 +41,17 @@ html {
     --all-text-color: #ffffff;
     --contact-paragrph-color: rgb(255 255 255 / 72%);
     --footer-text-color: #ADB5BD;
+    --darklight-mode-color: #fff;
+    --box-shadow: 1px 1px 20px #012290f7, 1px 1px 40px #0053b8f7;
     --hamburger-menu: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(240, 165, 0, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    --review-bg: rgba(31, 31, 31, 0.9);
+    --review-text: #ffffff;
+    --review-border: rgba(255, 255, 255, 0.1);
+    --review-stars: #f0a500;
+    --review-name: #f0a500;
+    --review-source: #cccccc;
+    --section-bg: #0A101E;
+    --section-text: #ffffff;
     --hamburger-border: none;
 }
 
@@ -42,7 +62,7 @@ h2 {
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #121212;
+    background-image: var(--theme-image);
     color: #ffffff;
 }
 
@@ -79,7 +99,7 @@ body {
   animation: animate 4s ease-in-out infinite;
 }
 
-/* Strict Permanenet sing background image for the following elements */
+/* Strict Permanent fixed background image for the following elements */
 .about, .header.scrolled, .services, .reviews, .team, .testimonials, .contact, #donations, .footer, .whatsapp {
 /*    background-color: #081B29 !important;*/
     background-image: var(--theme-image) !important;
@@ -90,7 +110,7 @@ body {
 
 /* The blue box shadow effect, applies to all elements thought to be good by Zig Zag */
 .testimonial, .service, .about-image, #donations .img-responsive, .team-member img, .whatsapp-image {
-    box-shadow: 1px 1px 20px #012290f7, 1px 1px 40px #0053b8f7 !important;
+    box-shadow: var(--box-shadow) !important;
 }
 
 .navbar-brand {
@@ -101,7 +121,7 @@ body {
 
 .navbar-nav .nav-link {
     color: var(--navigation-color) !important;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     margin: 0 10px;
     transition: color 0.3s ease;
     font-family: poppins;
@@ -126,7 +146,7 @@ body {
     align-items: center;
     text-align: center;
     height: 100vh;
-    background: url('../images/background-image.jpg') no-repeat center center/cover;
+    background: url('https://wallpaperxyz.com/wp-content/uploads/Picture-Website-Wallpaper-FHD-Free-Download-Laptop-Desktop-Macbook-2510-Wallpaperxyz.com-9.jpg') no-repeat center center/cover;
     position: relative;
 }
 
@@ -171,11 +191,11 @@ body {
   font-weight: 700;
   text-transform: uppercase;
   background: #EFA501;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease !important;
 }
 
 .cta-button:hover {
-    transform: scale(1.05);
+    transform: scale(1.06) !important;
     box-shadow: 0 0 5px #EFA501,
               0 0 25px #EFA501,
               0 0 50px #000,
@@ -201,10 +221,14 @@ body {
     font-size: 1.1em;
     line-height: 1.6;
     margin-bottom: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
 }
 
 .about-list {
     padding-left: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
 }
 
 .about-list li {
@@ -226,6 +250,7 @@ body {
 }
 
 .whatsapp {
+    margin-top: -20px;
     background-color: #1f1f1f;
     color: var(--all-text-color);
     padding: 60px 0;
@@ -245,6 +270,8 @@ body {
     font-size: 1.1em;
     line-height: 1.6;
     margin-bottom: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
 }
 
 .whatsapp-image {
@@ -257,7 +284,7 @@ body {
 }
 
 .whatsapp-image {
-    max-width: 380px;
+    max-width: 340px;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -300,6 +327,7 @@ body {
 
 .team-member h3 {
     font-size: 1.4em;
+    font-weight: 600;
     font-family: 'Roboto', sans-serif !important;
     margin: 15px 0 5px;
     color: var(--heading3-color);
@@ -342,12 +370,12 @@ body {
 
 .service {
     background-color: #3a4b81ad !important;
-    padding: 20px;
-    border-radius: 8px;
+    /* padding: 20px; */
+    /* border-radius: 8px; */
     max-width: 220px;
     text-align: center;
-    transition: transform 0.3s;
-    box-shadow: 1px 1px 20px #012290f7, 1px 1px 40px #0053b8f7;
+    /* transition: transform 0.3s;
+    box-shadow: 1px 1px 20px #012290f7, 1px 1px 40px #0053b8f7; */
 }
 
 .service h3 {
@@ -370,6 +398,9 @@ body {
     background-color: #1f1f1f;
 }
 
+.reviews {
+    margin-top: -60px;
+}
 .reviews h2 {
     font-size: 2.5em;
     margin-bottom: 40px;
@@ -466,7 +497,7 @@ body {
     margin-left: 40px;
 }
 
-#donations .cta-button {
+/* #donations .cta-button {
     display: inline-block;
     padding: 12px 25px;
     background-color: #f0a500;
@@ -484,7 +515,7 @@ body {
               0 0 25px #EFA501,
               0 0 50px #000,
               0 0 100px #EFA501 !important;
-}
+} */
 
 /* Contact Section Block 1*/
 .contact {
@@ -701,10 +732,11 @@ body {
   color: #ffffff;
   padding: 10px 30px;
   font-weight: bold;
-  transition: background-color 0.3s;
+  transition: transform 0.3s ease, box-shadow 0.3s ease !important;
 }
 
 .contact-form button:hover {
+  transform: scale(1.06) !important;
   box-shadow: 0 0 5px #06A3B8,
               0 0 25px #06A3B8,
               0 0 50px #06A3B8,
@@ -765,23 +797,25 @@ body {
   margin-left: 20px; /* The middle part from contact form and Address, Email etc */
 }
 
-.contact-info .contact-icon {
+/* .contact-info .contact-icon {
   width: 30px;
   height: 30px;
   margin-right: 15px;
-}
+} */
 
 .contact-info strong {
   display: block;
   font-size: 1.1em;
   margin-bottom: 5px;
   margin-left: 10px;
+  font-weight: 600;
 }
 
 .contact-info p {
   margin: 0;
   color: var(--contact-paragrph-color);
   margin-left: 10px;
+  font-weight: 600;
 }
 
 /* Typewriting effect styles */
@@ -861,14 +895,14 @@ body {
 }
 
 /* Initial state for all animated elements */
-.service,  .testimonial, .team-member, #donations .img-responsive, #donations h2, #donations p, #donations .cta-button, .about-image, .about p, .whatsapp-image, .whatsapp p, #point1, #point2, #point3 {
+.service,  .testimonial, .team-member, #donations .img-responsive, #donations h2, #donations p, #donations .cta-button, .about-image, .about p, .whatsapp-image, .whatsapp p, #point1, #point2, #point3, #join-now, .review {
     opacity: 0;
     transform: scale(0.5) rotate(-10deg);
     transition: opacity 1s ease-out, transform 1s ease-out !important;
 }
 
 /* Visible state for all animated elements */
-.service.visible, .testimonial.visible, .team-member.visible, #donations .img-responsive.visible, #donations h2.visible, #donations p.visible, #donations .cta-button.visible, .about-image.visible, .about p.visible, .whatsapp-image.visible, .whatsapp p.visible, #point1.visible, #point2.visible, #point3.visible {
+.service.visible, .testimonial.visible, .team-member.visible, #donations .img-responsive.visible, #donations h2.visible, #donations p.visible, #donations .cta-button.visible, .about-image.visible, .about p.visible, .whatsapp-image.visible, .whatsapp p.visible, #point1.visible, #point2.visible, #point3.visible, #join-now.visible, .review.visible {
     opacity: 1;
     transform: scale(1) rotate(0deg);
 }
@@ -972,8 +1006,107 @@ body {
               0 0 100px #06A3B8;
 }
 
-#icon {
+/* The Darkmode light mode icon from GoogleFonts */
+.material-symbols-outlined {
+    font-size: 1.8rem !important;
+    color: var(--darklight-mode-color);
+}
+
+#theme-toggle {
     width: 30px;
     margin-left: 30px;
     cursor: pointer;
+    font-weight: 600;
+}
+
+  .contact-info ul li #address-icon, #phone-icon, #email-icon {
+    font-size: 58px !important;
+    color: #06A3B8;
+    padding-top: 5px;
+  }
+  
+  /* Blue icon style */
+  .contact-info .blue-icon {
+    filter: brightness(0) saturate(100%) invert(40%) sepia(50%) saturate(3000%) hue-rotate(159deg) brightness(100%) contrast(95%);
+  }
+
+#reviews {
+    background-image: var(--theme-image);
+    padding: 0px 0;
+}
+
+#reviews h2 {
+    font-size: 2.5em;
+    color: #f0a500;
+    font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    font-weight: 700;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+#reviews .section-intro p {
+    color: var(--section-text);
+    font-size: 1.1em;
+    max-width: 600px;
+    margin: 0 auto 40px;
+    text-align: center;
+    opacity: 0.8;
+}
+
+.review {
+    background-color: var(--review-bg);
+    color: var(--review-text);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    padding: 25px;
+    margin: 20px 10px;
+    transition: all 0.3s ease;
+}
+
+.review:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(240, 165, 0, 0.2);
+}
+
+.review .person {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.review .person img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--review-name);
+}
+
+.review .person .text {
+    flex-grow: 1;
+}
+
+.review .person .text h6 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 2px;
+    color: var(--review-name);
+}
+
+.review .person .text .small {
+    font-size: 14px;
+    color: var(--review-source);
+    opacity: 0.8;
+}
+
+.review p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: var(--review-text);
+}
+
+.review .stars {
+    color: var(--review-stars);
+    font-size: 20px;
 }
